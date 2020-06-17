@@ -1,4 +1,3 @@
-import 'module-alias/register'
 import { checker, run } from '@/prereq-core'
 import { mustBeYearThree, moreThanNumOfCourse } from './checker/prereq'
 
