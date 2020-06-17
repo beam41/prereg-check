@@ -14,7 +14,12 @@ module.exports = {
       'error',
       {
         endOfLine: 'auto',
+        semi: false,
+        tabWidth: 2,
+        singleQuote: true,
+        trailingComma: 'all',
       },
     ],
+    '@typescript-eslint/no-explicit-any': ['off'],
   },
 }

@@ -1,14 +1,8 @@
-import express, { json } from 'express'
+import 'module-alias/register'
+import { checker, run } from '@/prereq-core'
+import { mustBeYearThree, moreThanNumOfCourse } from './checker/prereq'
 
-const app = express()
-app.use(json())
+checker.mustBeYearThree = mustBeYearThree
+checker.moreThanNumOfCourse = moreThanNumOfCourse
 
-app.get('/hi', (req, res) => {
-  res.send('Hello')
-})
-
-const port = 3000
-
-app.listen(port, () => {
-  console.log(`[Express] Server listening on port ${port}`)
-})
+run('http://localhost:8888/userdata/{id}')

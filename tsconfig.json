@@ -13,10 +13,12 @@
     "outDir": "dist",
     "baseUrl": ".",
     "paths": {
-      "*": ["node_modules/*"]
+      "*": ["node_modules/*"],
+      "~/*": ["./*"],
+      "@/*": ["./*"]
     }
   },
   "types": ["@types/node"],
-  "include": ["src/**/*"],
+  "include": ["prereq-core/*", "src/*"],
   "exclude": ["node_modules", "dist"]
 }
