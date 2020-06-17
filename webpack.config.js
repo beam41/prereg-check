@@ -27,6 +27,7 @@ module.exports = {
     }
   },
   output: {
+    ecmaVersion: 2020,
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
